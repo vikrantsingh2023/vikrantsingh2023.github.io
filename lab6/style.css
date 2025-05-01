@@ -1,0 +1,120 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', Arial, sans-serif;
+}
+body {
+  background: linear-gradient(120deg, #A1C4FD, #C2E9FB); /* Cool blue gradient */
+  color: #222;
+  font-size: 16px;
+  line-height: 1.5;
+}
+.weather-app-container {
+  width: 90%;
+  max-width: 900px;
+  background: #ffffff;
+  margin: 40px auto;
+  border-radius: 16px;
+  padding: 32px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
+}
+header h1 {
+  text-align: center;
+  font-size: 2rem;
+  color: #4C6EF5; /* Blue heading */
+  margin-bottom: 24px;
+}
+.controls {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+  justify-content: center;
+  margin-bottom: 32px;
+}
+.control-item {
+  flex: 1 1 240px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+input, select {
+  flex: 1;
+  background: #F5F7FA;
+  color: #333;
+  border: 1px solid #CCC;
+  border-radius: 8px;
+  padding: 12px;
+  font-size: 14px;
+}
+input::placeholder {
+  color: #AAA;
+}
+button {
+  background: #6C63FF; /* Purple button */
+  color: #FFF;
+  border: none;
+  border-radius: 8px;
+  padding: 12px 20px;
+  cursor: pointer;
+  font-size: 14px;
+  transition: background 0.3s;
+}
+button:hover {
+  background: #4C4CFF;
+}
+.error-message {
+  color: #FF4D4D;
+  text-align: center;
+  margin-bottom: 16px;
+}
+.weather-cards {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 32px;
+}
+@media (min-width: 768px) {
+  .weather-cards {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+.weather-card {
+  background: linear-gradient(135deg, #D0E6FF, #E6CCFF); /* Light blue-violet */
+  border-radius: 16px;
+  padding: 32px;
+  text-align: center;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+}
+.weather-card h2 {
+  font-size: 1.75rem;
+  color: #4C6EF5;
+  margin-bottom: 12px;
+}
+.card-date {
+  color: #555;
+  margin-bottom: 20px;
+}
+.weather-icon {
+  width: 72px;
+  margin: 16px auto;
+}
+.sunrise-section, .sunset-section {
+  margin-bottom: 24px;
+}
+.time, .dawn-time, .dusk-time, .solar-noon, .day-length, .time-zone {
+  margin-top: 8px;
+  color: #333;
+}
+.credits {
+  text-align: center;
+  font-size: 13px;
+  margin: 32px 0 16px;
+  color: #666;
+}
+.credits a {
+  color: #6C63FF;
+  text-decoration: none;
+}
+.credits a:hover {
+  text-decoration: underline;
+}
